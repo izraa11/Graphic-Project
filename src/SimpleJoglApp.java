@@ -87,7 +87,7 @@ class SimpleGLEventListener implements GLEventListener {
     public void init(GLAutoDrawable drawable) {
         GL gl = drawable.getGL();
 
-        gl.glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
+        gl.glClearColor(0.0f, 1.0f, 0.0f, 1.0f);
 
         gl.glViewport(0, 0, 600, 300);
         gl.glMatrixMode(GL.GL_PROJECTION);
