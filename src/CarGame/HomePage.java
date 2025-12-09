@@ -5,21 +5,31 @@ import java.awt.*;
 import java.awt.event.ActionListener;
 
 public class HomePage extends JPanel {
-    private JButton singlePlayerButton = new JButton("Single Player");
-    private JButton multiPlayerButton = new JButton("Multi Player");
-    private JButton howToPlayButton = new JButton("How To Play");
-    private JButton exitButton = new JButton("Exit");
-    private JButton signInButton = new JButton("Sign In");
+    private JButton singlePlayerButton  ;
+    private JButton multiPlayerButton ;
+    private JButton howToPlayButton ;
+    private JButton exitButton ;
+    private JButton signInButton;
     private String PlayerName="";
     private Image BackGround;
     public HomePage() {
-        BackGround = new ImageIcon("BackGround.jpg").getImage();
+        BackGround = new ImageIcon("src/Images/BackGround.png").getImage();
         setLayout(null);
+
+        singlePlayerButton=createButton("singlePlayerButton");
         singlePlayerButton.setLocation(300,150);
+
+        multiPlayerButton=createButton("multiPlayerButton");
         multiPlayerButton.setLocation(300,250);
+
+        howToPlayButton=createButton("howToPlayButton");
         howToPlayButton.setLocation(300,300);
-        signInButton.setLocation(10,10);
+
+        exitButton=creatExitButton("exitButton");
         exitButton.setLocation(10,250);
+
+        signInButton=createButton("signInButton");
+        signInButton.setLocation(10,10);
 
         add(singlePlayerButton);
         add(multiPlayerButton);
@@ -42,7 +52,7 @@ public class HomePage extends JPanel {
         button.setSize(200, 60);
         button.setOpaque(false);
         button.setContentAreaFilled(false);
-        button.setForeground(Color.BLACK);
+        button.setForeground(Color.WHITE);
         button.setFont(new Font("Arial", Font.BOLD, 18));
         return button;
 

@@ -20,6 +20,12 @@ public class TheGame extends JFrame {
 
 
 //
+        homePage.setButtonAction(e ->{
+            String command = e.getActionCommand();
+            if("Exit".equals(command)){
+                System.exit(0);
+            }
+        });
 
 
 
