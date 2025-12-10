@@ -25,7 +25,7 @@ public class HomePage extends JPanel {
         howToPlayButton=createButton("howToPlayButton");
         howToPlayButton.setLocation(300,300);
 
-        exitButton=creatExitButton("exitButton");
+        exitButton=creatExitButton("Exit");
         exitButton.setLocation(10,250);
 
         signInButton=createButton("signInButton");
